@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addcaozuorenyuan</class>
+ <widget class="QWidget" name="addcaozuorenyuan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>548</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget 
+{
+	background-color: rgb(0, 85, 0);
+	color: rgb(255, 255, 255);
+}
+QLabel
+{
+ border-style:none;
+font: 9pt &quot;微软雅黑&quot;;
+
+}
+
+QPushButton:hover
+{
+border-style:solid;
+font: 9pt &quot;微软雅黑&quot;;
+border-width:4px;
+background-color: rgb(255, 170, 127);
+color: rgba(255, 255, 255, 255);
+}
+
+QPushButton:!hover
+{
+border-style:solid;
+font: 9pt &quot;微软雅黑&quot;;
+border-width:4px;
+background-color:rgb(0, 85, 0);
+color: rgba(255, 255, 255, 255);
+}
+
+QTabBar:tab:selected
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	background-color: rgb(255, 170, 127);
+}
+QTabBar:tab:!selected
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	background-color: rgb(0, 85, 0);
+}
+QLineEdit
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+QTableWidget
+{
+	
+	background-color: rgb(0, 85, 0);
+
+}
+
+QListWidget
+{
+	
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+}
+QListWidget::item
+{
+	color: rgb(0, 0, 0);
+	
+	border-style:none;
+	font: 9pt &quot;微软雅黑&quot;;
+	
+	border-bottom-style:solid;
+	border-bottom-width:4px;
+	border-bottom-color:rgb(0, 85, 0);
+	background-color: rgb(255, 255, 255);
+
+}
+QListWidget::item:hover
+{
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(85, 255, 255);
+}
+QListWidget::item:!hover
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+QListWidget::item:selected
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 0, 0);
+}
+/*
+QListWidget::item:!selected
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}*/
+
+
+
+
+QComboBox
+{
+	background-color: rgb(255, 255, 255);
+	
+	color: rgb(0, 0, 0);
+}
+QComboBox::drop-down
+{
+ 	width:47px;
+	border-image: url(:/arrow_down.png);	
+}
+QCheckBox
+{
+	font: 9pt &quot;微软雅黑&quot;;
+
+}
+
+QMenuBar
+{
+	background-color:transparent;
+
+}
+
+QMenuBar::item
+{
+	background-color: rgb(0, 85, 0);
+}
+QMenuBar::item:selected
+{
+	background-color: rgb(255, 170, 0);
+}
+QMenuBar::item:!selected
+{
+	
+	background-color: rgb(0, 85, 0);
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>210</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回查看人员列表</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>120</y>
+     <width>72</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>操作员</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>40</y>
+     <width>131</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>210</y>
+     <width>187</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>41</y>
+     <width>262</width>
+     <height>135</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>用户名</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="user">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="password">
+        <property name="text">
+         <string>密码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="passwordtxt">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="showpassword">
+      <property name="text">
+       <string>显示密码</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="passwordtwo">
+        <property name="text">
+         <string>确认密码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="quretxt">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>311</x>
+     <y>80</y>
+     <width>94</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>76</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>    权限设置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

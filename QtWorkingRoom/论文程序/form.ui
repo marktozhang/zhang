@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1422</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 170, 127);
+
+
+</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>670</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>消耗矩阵</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>670</y>
+     <width>181</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>这边是路程的消耗
+整数形式</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="weight_oil">
+   <property name="geometry">
+    <rect>
+     <x>1160</x>
+     <y>710</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>710</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>权值</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>670</y>
+     <width>362</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>这边是0.n形式</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="weight_card">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>权值</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="4">
+        <widget class="QLabel" name="label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>    堵车概率矩阵 </string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>修正因子</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="yiniz">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalWidget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>374</x>
+     <y>670</y>
+     <width>731</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(85, 170, 255);
+</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">border-right-style:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="styleSheet">
+       <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:1px;
+background-color: rgb(85, 170, 255);
+font: 75 9pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string> 保存设定并返回  </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="styleSheet">
+       <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:1px;
+background-color: rgb(85, 170, 255);
+font: 75 9pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>保存这两个矩阵</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="styleSheet">
+       <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:1px;
+background-color: rgb(85, 170, 255);
+font: 75 9pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>读取之前两个矩阵</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="styleSheet">
+       <string notr="true">border-style:solid;
+border-color:rgb(32, 255, 39);
+border-width:1px;
+background-color: rgb(85, 170, 255);
+font: 75 9pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>调整大小</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="size">
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_8">
+      <property name="styleSheet">
+       <string notr="true">border-style:solid;
+border-left-style:none;
+border-color:rgb(32, 255, 39);
+border-width:4px;
+background-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

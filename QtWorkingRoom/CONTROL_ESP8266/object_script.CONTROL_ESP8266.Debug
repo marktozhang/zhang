@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\form.o
+./debug\thread_network.o
+./debug\window_main.o
+./debug\thread_login.o
+./debug\window_listwidget_showuser.o
+./debug\message.o
+./debug\moc_mainwindow.o
+./debug\moc_form.o
+./debug\moc_thread_network.o
+./debug\moc_window_main.o
+./debug\moc_thread_login.o
+./debug\moc_window_listwidget_showuser.o
+./debug\moc_message.o
+);

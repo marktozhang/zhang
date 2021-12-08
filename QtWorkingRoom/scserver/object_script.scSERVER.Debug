@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\server.o
+./debug\client.o
+./debug\scdata.o
+./debug\checkthread.o
+./debug\dtu.o
+./debug\moc_server.o
+./debug\moc_mainwindow.o
+./debug\moc_client.o
+./debug\moc_checkthread.o
+./debug\moc_dtu.o
+);

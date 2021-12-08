@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\server.o
+./release\client.o
+./release\scdata.o
+./release\checkthread.o
+./release\dtu.o
+./release\moc_server.o
+./release\moc_mainwindow.o
+./release\moc_client.o
+./release\moc_checkthread.o
+./release\moc_dtu.o
+);

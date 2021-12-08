@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\form.o
+./release\thread_network.o
+./release\window_main.o
+./release\thread_login.o
+./release\window_listwidget_showuser.o
+./release\message.o
+./release\moc_mainwindow.o
+./release\moc_form.o
+./release\moc_thread_network.o
+./release\moc_window_main.o
+./release\moc_thread_login.o
+./release\moc_window_listwidget_showuser.o
+./release\moc_message.o
+);

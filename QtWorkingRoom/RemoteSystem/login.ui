@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QWidget" name="login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QPushButton" name="loginStart">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>317</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,255);
+background-color: rgb(0, 170, 255);
+font:  14pt &quot;隶书&quot;;
+color: rgba(255, 255, 255, 255);
+ }
+                 
+
+               
+QPushButton:hover
+{
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,255);
+background-color: rgba(0, 170, 255,200);
+font:  14pt &quot;隶书&quot;;
+}
+
+QPushButton:pressed
+{
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,255);
+ background-color:rgb(204 , 228 , 247);
+font:  14pt &quot;隶书&quot;;
+color: rgba(255, 255, 255, 255);
+
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>安全登录</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>401</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,9">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="user">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+font:  11pt &quot;隶书&quot;;
+
+color: rgba(100, 100, 100, 255);
+/*
+border-top-style: none;
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: rgb(232, 232, 232);
+
+border-left-style: none;
+border-right-style: none;*/
+boder-style:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>用户名</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="txtuser">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox
+{
+	border-style: none;
+}
+
+QComboBox::drop-down
+{
+ 	width:47px;
+	border-image: url(:/arrow_down.png);	
+}
+
+QComboBox::editable
+{
+	font: 75 12pt &quot;华文细黑&quot;;
+	border-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: rgb(255, 255,255);
+}
+QComboBox::editable:hover
+{
+	font: 75 12pt &quot;华文细黑&quot;;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: rgb(200, 20, 200);
+}
+
+
+
+</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="maxVisibleItems">
+         <number>5</number>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>admin</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,9">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+font:  11pt &quot;隶书&quot;;
+
+color: rgba(100, 100, 100, 255);
+/*
+border-top-style: none;
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: rgb(232, 232, 232);
+
+border-left-style: none;
+border-right-style: none;*/
+border-style:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>密码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtpassword">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+font: 75 12pt &quot;华文细黑&quot;;
+border-top-style: none;
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: rgb(232, 232, 232);
+
+border-left-style: none;
+border-right-style: none;
+}
+QLineEdit:hover
+{
+border-top-style: none;
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: rgb(200, 20, 200);
+
+border-left-style: none;
+border-right-style: none;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>551</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgba(108, 158, 232, 255);</string>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>30</y>
+      <width>231</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 20pt &quot;微软雅黑&quot;;
+background-color: rgba(74, 100, 61, 0);
+color: rgba(255, 0, 0, 200);</string>
+    </property>
+    <property name="text">
+     <string>司创科技</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>105</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="showmin">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	color: rgb(255, 255, 255);
+	font: 25 20pt &quot;微软雅黑 Light&quot;;
+	border-style:none;
+background-color: rgba(108, 158, 232, 0);
+}
+QPushButton:hover
+{
+background-color: rgba(255, 85, 0,255);
+}
+QPushButton:!hover
+{
+background-color: rgba(108, 158, 232, 0);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="closeWindow">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	color: rgb(255, 255, 255);
+	font: 25 20pt &quot;微软雅黑 Light&quot;;
+	border-style:none;
+background-color: rgba(108, 158, 232, 0);
+}
+QPushButton:hover
+{
+background-color: rgba(255, 85, 0,255);
+}
+QPushButton:!hover
+{
+
+background-color: rgba(108, 158, 232, 0);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>×</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="horizontalWidget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>370</y>
+     <width>531</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1,6">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMinimumSize</enum>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>65</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>65</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>隶书</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border-style：none
+font:  11pt &quot;隶书&quot;;
+
+color: rgba(165, 165, 165, 200);
+background-color: rgb(255, 255, 255);
+}
+
+QPushButton:pressed
+{
+font:  11pt &quot;隶书&quot;;
+color: rgba(165, 165, 165, 200);
+background-color: rgb(255, 255, 255);
+border-style:none
+}
+
+QPushButton:hover
+{
+font:  11pt &quot;隶书&quot;;
+color: rgba(165, 165, 1265, 250);
+background-color: rgb(255, 255, 255);
+border-style:none
+}
+
+QPushButton:!hover
+{
+border-style：none
+font:  11pt &quot;隶书&quot;;
+
+color: rgba(165, 165, 165, 200);
+background-color: rgb(255, 255, 255);
+border-style:none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>注册</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>72</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>72</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>隶书</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border-style：none
+font:  11pt &quot;隶书&quot;;
+
+color: rgba(165, 165, 165, 200);
+background-color: rgb(255, 255, 255);
+}
+
+QPushButton:pressed
+{
+font:  11pt &quot;隶书&quot;;
+color: rgba(165, 165, 165, 200);
+background-color: rgb(255, 255, 255);
+border-style:none
+}
+
+QPushButton:hover
+{
+font:  11pt &quot;隶书&quot;;
+color: rgba(165, 165, 1265, 250);
+background-color: rgb(255, 255, 255);
+border-style:none
+}
+
+QPushButton:!hover
+{
+border-style：none
+font:  11pt &quot;隶书&quot;;
+
+color: rgba(165, 165, 165, 200);
+background-color: rgb(255, 255, 255);
+border-style:none;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>使用旧版</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="txtwaring">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>342</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>342</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>隶书</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+border-style：none
+font:  11pt &quot;隶书&quot;;
+color: rgba(180, 0, 0, 200);
+background-color: rgb(255, 255, 255);
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>服务器未连接，请稍等/重试/检查网络状态</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>280</y>
+     <width>321</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>321</width>
+     <height>21</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="5,5,4">
+    <property name="rightMargin">
+     <number>1</number>
+    </property>
+    <item>
+     <widget class="QCheckBox" name="autologin">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>105</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:  11pt &quot;隶书&quot;;
+color: rgba(165, 165, 165, 200);</string>
+      </property>
+      <property name="text">
+       <string>自动登录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="memorypassword">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:  11pt &quot;隶书&quot;;
+color: rgba(165, 165, 165, 200);</string>
+      </property>
+      <property name="text">
+       <string>记住密码</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+	font:  11pt &quot;隶书&quot;;
+	color: rgba(165, 165, 165, 200);
+}
+
+QLabel:hover
+{
+	color: rgba(0, 0, 0, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>找回密码</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>130</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{background-color: rgb(255, 255, 255);color:rgb(0,0,0);}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

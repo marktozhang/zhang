@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1109</width>
+    <height>839</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>1000</x>
+         <y>100</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ucb</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="startV">
+       <property name="geometry">
+        <rect>
+         <x>980</x>
+         <y>20</y>
+         <width>113</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>20</y>
+         <width>72</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>开始点</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>900</x>
+         <y>60</y>
+         <width>72</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>结束点</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="end">
+       <property name="geometry">
+        <rect>
+         <x>980</x>
+         <y>50</y>
+         <width>113</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>900</x>
+         <y>140</y>
+         <width>201</width>
+         <height>581</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window_main</class>
+ <widget class="QWidget" name="window_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="2,8">
+     <property name="bottomMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_changlogin">
+           <property name="text">
+            <string>切换登录</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1,1">
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>在线人数</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget_user"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>产品数量</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="bottomMargin">
+          <number>50</number>
+         </property>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="pushButton_refresh_information">
+           <property name="text">
+            <string>刷新</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_show_netstation">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

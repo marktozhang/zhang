@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>floormanage</class>
+ <widget class="QWidget" name="floormanage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget 
+{
+	background-color: rgb(0, 85, 0);
+	color: rgb(255, 255, 255);
+}
+QLabel
+{
+ border-style:none;
+font: 9pt &quot;微软雅黑&quot;;
+
+}
+
+QPushButton:hover
+{
+border-style:solid;
+font: 9pt &quot;微软雅黑&quot;;
+border-width:4px;
+background-color: rgb(255, 170, 127);
+color: rgba(255, 255, 255, 255);
+}
+
+QPushButton:!hover
+{
+border-style:solid;
+font: 9pt &quot;微软雅黑&quot;;
+border-width:4px;
+background-color:rgb(0, 85, 0);
+color: rgba(255, 255, 255, 255);
+}
+
+QTabBar:tab:selected
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	background-color: rgb(255, 170, 127);
+}
+QTabBar:tab:!selected
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	background-color: rgb(0, 85, 0);
+}
+QLineEdit
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+QTableWidget
+{
+	
+	background-color: rgb(0, 85, 0);
+
+}
+
+QListWidget
+{
+	
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+}
+QListWidget::item
+{
+	color: rgb(0, 0, 0);
+	
+	border-style:none;
+	font: 9pt &quot;微软雅黑&quot;;
+	
+	border-bottom-style:solid;
+	border-bottom-width:4px;
+	border-bottom-color:rgb(0, 85, 0);
+	background-color: rgb(255, 255, 255);
+
+}
+QListWidget::item:hover
+{
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(85, 255, 255);
+}
+QListWidget::item:!hover
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+QListWidget::item:selected
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 0, 0);
+}
+/*
+QListWidget::item:!selected
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}*/
+
+
+
+
+QComboBox
+{
+	background-color: rgb(255, 255, 255);
+	
+	color: rgb(0, 0, 0);
+}
+QComboBox::drop-down
+{
+ 	width:47px;
+	border-image: url(:/arrow_down.png);	
+}
+QCheckBox
+{
+	font: 9pt &quot;微软雅黑&quot;;
+
+}
+
+QMenuBar
+{
+	background-color:transparent;
+
+}
+
+QMenuBar::item
+{
+	background-color: rgb(0, 85, 0);
+}
+QMenuBar::item:selected
+{
+	background-color: rgb(255, 170, 0);
+}
+QMenuBar::item:!selected
+{
+	
+	background-color: rgb(0, 85, 0);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>楼名称</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="listWidget_2">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::ListMode</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>楼 名称 </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="add">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="xiugai">
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delete_2">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

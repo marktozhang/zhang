@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>1dsa.jpg</file>
+        <file>16d33989754ea250062fde392babe5de.jpg</file>
+        <file>00612eeaec8f52c869d9a1710e654056.jpg</file>
+        <file>u=610847869,26375.jpg</file>
+        <file>timg.gif</file>
+        <file>arrow_down.png</file>
+        <file>release/point.jpg</file>
+        <file>point.png</file>
+        <file>backt.jpg</file>
+    </qresource>
+</RCC>
