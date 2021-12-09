@@ -124,7 +124,6 @@ bool ExcelEngine::Open(UINT nSheet, bool visible)
         pWorkbook = pWorkbooks->querySubObject("Open(QString, QVariant)",sXlsFile,QVariant(0)); //打开xls对应的工作簿
         QAxObject *workBook = pExcel->querySubObject("ActiveWorkBook");
         pSheets =workBook->querySubObject("Sheets");
-        int ggg;
         sheetcounts=pSheets->property("Count").toInt();
     }
     else
