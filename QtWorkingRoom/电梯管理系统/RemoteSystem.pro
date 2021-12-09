@@ -34,7 +34,8 @@ SOURCES += main.cpp \
     scdata.cpp \
     sql.cpp \
     addpeople.cpp \
-    serialport.cpp
+    serialport.cpp \
+    DataBaseConnect.cpp
 
 HEADERS  += \
     cnnNT.h \
@@ -56,7 +57,8 @@ HEADERS  += \
     scdata.h \
     sql.h \
     addpeople.h \
-    serialport.h
+    serialport.h \
+    DataBaseConnect.h
 
 FORMS    += \
     esp8266.ui \
