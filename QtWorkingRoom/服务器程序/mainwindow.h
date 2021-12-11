@@ -22,7 +22,7 @@ private:
     Ui::MainWindow *ui;
     QTimer* timer;//用来定时刷新
     Server * ser;//服务器线程
-SOCKET serversocket;//监听套接字
+SOCKET ServerSocket;//监听套接字
     WSADATA wsadata;
     QTimer* s;
 signals:

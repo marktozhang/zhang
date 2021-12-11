@@ -1,5 +1,6 @@
 #include "server.h"
 #include"checkthread.h"
+#include<thread>
 ArrayThread* arrThread;//客户
 ArrayThread* arrThread_f;//face
 ArrayThread* arrThread_esp;//face
@@ -10,9 +11,79 @@ QMutex locker;
 Server::Server(QObject *parent) :
     QThread(parent)
 {
+    Init();
+}
 
-;
+void Server::Init()
+{
+    //请求系统版本号
+    WSAStartup(0x202, &wsadata);
+    if(HIBYTE(wsadata.wVersion)!=2||LOBYTE(wsadata.wVersion)!=2)
+    {
+        qDebug()<<"服务器启动失败：请求版本号失败";
+        return ;
+    }
+    //创建TCPsocket
+      ServerSocket=::socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
+      if(ServerSocket==INVALID_SOCKET)
+      {
+          qDebug()<<"服务器启动失败：socket创建失败";
+          return;
+      }
+      //给套接字绑定地址
+      sockaddr_in service;
+      service.sin_family=PF_INET;
+      service.sin_addr.S_un.S_addr=htonl(INADDR_ANY);
+      service.sin_port=htons(8848);
+      if(::bind(ServerSocket,(sockaddr*)&service,sizeof(sockaddr_in))==SOCKET_ERROR)
+      {
+          qDebug()<<"服务器启动失败：socket绑定信息失败";
+          return;
+      }
+      //开始监听
+      if( listen(ServerSocket,SOMAXCONN) == SOCKET_ERROR)
+      {
+          qDebug()<<"服务器启动失败：socket不能监听";
+           return ;
+      }
+      char host[255];
+      if(gethostname(host,sizeof(host))==SOCKET_ERROR)
+      {
+           qDebug()<<"主机地址无效";
+           return;
+      }
+      char*  nip;//内网ip
+      struct hostent *p=gethostbyname(host);
+      if(!p)
+      {
+           qDebug()<<"主机地址无效";
+       }
+       else
+       {
+           for(int i=0;p->h_addr_list[i]!=0;i++)
+           {
+                 struct in_addr in;
+                 memcpy(&in,p->h_addr_list[i],sizeof(struct in_addr));
+                 nip=inet_ntoa(in);
+           }
+        }
+      qDebug()<<"主机地址:"+nip;
+      std::thread ServerThread(Record);
+}
 
+void Server::Record()
+{
+    qDebug()<<"监听中...";
+    sockaddr_in Address;
+    int size = sizeof(Address);
+    while(!isInterruptionRequested())
+    {
+        memset(&Address,0,size);
+        SOCKET client = ::accept(ServerSocket,(sockaddr*)&Address,&size);
+        QString clientIp(inet_ntoa(clientAddr.sin_addr));
+        int clientPort = ntohs(clientAddr.sin_port);
+        qDebug()<<"IP:"<<clientIp<<"Port:"<<QString::number(clientPort);
+    }
 }
 
 Server::Server(SOCKET s)
@@ -54,7 +125,6 @@ void Server::test(QString str)
     emit to_Remote_Client("das111111111d");
     emit to_Remote_Client(str);
 }
-
 
 void Server::run()
 {

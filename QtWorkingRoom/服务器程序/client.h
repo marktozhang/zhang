@@ -12,6 +12,8 @@
 #include"server.h"
 #include"scdata.h"
 #include"esp8266.h"
+
+#include<>
 typedef struct
 {
     int* size;
@@ -25,7 +27,11 @@ typedef struct
     int type;//用户类型
 }ArrayThread;
 
-class Client : public QThread
+//////////////////////////////////////////////////////////////////////////////////////////
+/// <summury> 客户接待类 </summury>
+//////////////////////////////////////////////////////////////////////////////////////////
+
+class Client : public Thread
 {
     Q_OBJECT
 public:

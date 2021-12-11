@@ -36,13 +36,7 @@ public:
 
     bool Init(QString IP ="127.0.0.1" ,int Port = 8888 ,QString UserName = "",QString Password = "",QString DataBaseName = "",,QString Type = "");
 
-    //////////////////////////////////////////////////////////////////////////////////////////
-    /// <summury> 读取一张表里所有信息 </summury>
-    ///
-    /// <param name = "TableName"> 表名 </param>
-    ///
-    /// <return> 返回记录每一行数据的容器 </return>
-    //////////////////////////////////////////////////////////////////////////////////////////
+
 
     QVector<QStringList> ReadTable(QString TableName);
 
